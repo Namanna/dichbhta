@@ -1,5 +1,5 @@
 body{
-background-color:#AAA;
+background-color:#4d4d4d;
 }
 ul {
     list-style-type: none;
@@ -13,20 +13,24 @@ li {
     float: left;
 }
 img{
-	width:100%;
-	height:auto;
+	display: block;
+	width: 90%;
+	height: auto;
+	margin: auto;
 	
 }
 li a, .dropbtn {
     display: inline-block;
-    color: white;
+    color: #DDD;
     text-align: center;
     padding: 14px 16px;
+	font-family: "Lucida Sans", sans-serif;
     text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #0FF;
+	color: #333;
 }
 
 li.dropdown {
@@ -36,7 +40,7 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #999;
     min-width: 120px;
     box-shadow: 10px 10px 8px rgba(10,10,10,0.3);
     z-index: 1;
@@ -44,8 +48,9 @@ li.dropdown {
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 3px 16px;
     text-decoration: none;
+	font-size: 22px;
     display: block;
     text-align: left;
 }
@@ -55,3 +60,48 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+#hocntn{
+	text-align: center;
+	font-family: Arial;
+	font-size: 50px;
+	color:#CCC;
+}
+footer{
+	clear: both;
+	text-align: center;
+	border-top: 1px solid #AAA;
+	font-size: 20px;
+	color: #EEE;
+}
+.mot{
+	max-width: 500px;
+	height: 250px;
+	float: left;
+	margin: 0px 0px 30px 10%;
+	padding: 70px 3px 0px 20px;
+	font-size: 28px;
+	border: 2px solid grey;
+	border-radius: 10px;
+	font-family: "Lucida Sans", sans-serif;
+	color: #CCC;
+	background-color: #333;
+}
+@media only screen and (min-width: 240px) and (max-width: 1023px) {
+	.mot{
+		margin: 0px 0px 30px 16%;
+	}
+	.dropdown-content a{
+		font-size: 30px;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1360px) {
+	.mot{
+		margin: 0px 0px 30px 24%;
+	}
+}
+@media only screen and (min-width: 1361px) and (max-width: 1370px) {
+	.mot{
+		margin: 0px 0px 30px 7%;
+	}
+}
+
